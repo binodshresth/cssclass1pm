@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:  #032D5B;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo h2{
+    color:#fff;
+    padding-left: 20px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+.search-form{
+    padding-right: 20px;
+}
+form input{
+    padding: 10px;
+}
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: orangered;
+}
+.dropdown{
+    width: 114px;
+    background-color:#2E4053;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+
+
+}
+nav ul li:hover .dropdown{
+    display: block;
+}
+.dropdown li a{
+    display: block;
+    
+}
+.sub-dropdown{
+    width: 120px;
+    background-color: lightblue;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    
+}
+.dropdown li:hover .sub-dropdown{
+    display: block;
+}
+.active{
+    background-color: orangered;
+}
